@@ -21,7 +21,7 @@ public:
     Queue(const Queue<G>&);
     int GetSize();
     void Push(G);
-    int Pop();
+    G Pop();
     void Print();
     ~Queue();
 };
