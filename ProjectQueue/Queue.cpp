@@ -33,7 +33,7 @@ Queue<G>::Queue(Queue<G>&& orig)
     orig.Bot = NULL;
     orig.Start = 0;
     orig.Bot = 0;
-    //занулить ориг массив
+    //Г§Г Г­ГіГ«ГЁГІГј Г®Г°ГЁГЈ Г¬Г Г±Г±ГЁГў
 }
 template<typename G>
 Queue<G>::Queue(const Queue<G>& copy)
@@ -171,10 +171,10 @@ void Queue<G>::Push(G value)
     Size++;
 }
 template<typename G>
-int Queue<G>::Pop()
+G Queue<G>::Pop()
 {
     if (Size == 0) return NULL;
-    int value = Top->Value;
+    G value = Top->Value;
     Node<G>* tmp = Top->Prev;
     delete Top;
     Top = tmp;
